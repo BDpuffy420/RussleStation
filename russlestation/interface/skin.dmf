@@ -430,6 +430,64 @@ macro "hotkeymode"
 		command = "F12"
 		is-disabled = false
 
+macro "macro1"
+
+
+menu "Trait menu"
+	elem 
+		name = "Good traits"
+		command = ""
+		category = ""
+		is-checked = false
+		can-check = false
+		group = ""
+		is-disabled = false
+		saved-params = "is-checked"
+	elem 
+		name = "Regenerative"
+		command = "REGENERATEBLOCK=1"
+		category = "Good traits"
+		is-checked = false
+		can-check = false
+		group = ""
+		is-disabled = false
+		saved-params = "is-checked"
+	elem 
+		name = "Runner"
+		command = "INCREASERUNBLOCK=1"
+		category = "Good traits"
+		is-checked = false
+		can-check = false
+		group = ""
+		is-disabled = false
+		saved-params = "is-checked"
+	elem 
+		name = "Muscular"
+		command = "mMuscles=1"
+		category = "Good traits"
+		is-checked = false
+		can-check = false
+		group = ""
+		is-disabled = false
+		saved-params = "is-checked"
+	elem 
+		name = "Bad traits"
+		command = ""
+		category = ""
+		is-checked = false
+		can-check = false
+		group = ""
+		is-disabled = false
+		saved-params = "is-checked"
+	elem 
+		name = "Weak"
+		command = "mWeak=1"
+		category = "Bad traits"
+		is-checked = false
+		can-check = false
+		group = ""
+		is-disabled = false
+		saved-params = "is-checked"
 
 menu "menu"
 	elem 
@@ -790,6 +848,213 @@ window "Telecomms IDE"
 		multi-line = true
 		is-password = false
 		no-command = true
+
+window "Trait menu"
+	elem "Trait menu"
+		type = MAIN
+		pos = 281,0
+		size = 352x162
+		anchor1 = none
+		anchor2 = none
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = none
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		on-size = ""
+		title = ""
+		titlebar = true
+		statusbar = true
+		can-close = true
+		can-minimize = true
+		can-resize = true
+		is-pane = false
+		is-minimized = false
+		is-maximized = false
+		can-scroll = none
+		icon = ""
+		image = ""
+		image-mode = stretch
+		keep-aspect = false
+		transparent-color = none
+		alpha = 255
+		macro = ""
+		menu = ""
+		on-close = ""
+	elem "button9"
+		type = BUTTON
+		pos = 128,112
+		size = 96x20
+		anchor1 = none
+		anchor2 = none
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = none
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = "is-checked"
+		on-size = ""
+		text = "Weak"
+		image = ""
+		command = "mWeak=1"
+		is-flat = false
+		stretch = false
+		is-checked = false
+		group = ""
+		button-type = checkbox
+	elem "button8"
+		type = BUTTON
+		pos = 128,88
+		size = 96x20
+		anchor1 = none
+		anchor2 = none
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = none
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = "is-checked"
+		on-size = ""
+		text = "Muscular"
+		image = ""
+		command = "mMuscles=1"
+		is-flat = false
+		stretch = false
+		is-checked = false
+		group = ""
+		button-type = checkbox
+	elem "label1"
+		type = LABEL
+		pos = 136,16
+		size = 76x20
+		anchor1 = none
+		anchor2 = none
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = none
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		text = "Traits"
+		image = ""
+		image-mode = center
+		keep-aspect = false
+		align = center
+		text-wrap = false
+	elem "button7"
+		type = BUTTON
+		pos = 128,64
+		size = 96x20
+		anchor1 = none
+		anchor2 = none
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = none
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = "is-checked"
+		on-size = ""
+		text = "Runner"
+		image = ""
+		command = "INCREASERUNBLOCK=1"
+		is-flat = false
+		stretch = false
+		is-checked = false
+		group = ""
+		button-type = checkbox
+	elem "button6"
+		type = BUTTON
+		pos = 128,40
+		size = 96x20
+		anchor1 = none
+		anchor2 = none
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = none
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = "is-checked"
+		on-size = ""
+		text = "Regenerative"
+		image = ""
+		command = "REGENERATEBLOCK=1"
+		is-flat = false
+		stretch = false
+		is-checked = false
+		group = ""
+		button-type = checkbox
+	elem "bar1"
+		type = BAR
+		pos = 208,160
+		size = 100x2
+		anchor1 = none
+		anchor2 = none
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = none
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		bar-color = #ffffff
+		is-slider = false
+		width = 10
+		dir = east
+		angle1 = 0
+		angle2 = 180
+		value = 0
+		on-change = ""
 
 window "chemdispenser"
 	elem "chemdispenser"

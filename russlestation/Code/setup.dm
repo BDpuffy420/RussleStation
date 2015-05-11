@@ -362,6 +362,8 @@ var/MAX_EXPLOSION_RANGE = 14
 #define mShock			109 	// insulated hands
 #define mSmallsize		110 	// table climbing
 #define mHeatres		111 	// limited fireproofing... In theory ~Aztec
+#define mMuscles		112
+#define mWeak			113
 
 //disabilities
 #define NEARSIGHTED		1

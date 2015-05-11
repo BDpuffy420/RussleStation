@@ -206,3 +206,17 @@
 		block=TELEBLOCK
 	OnDrawUnderlays(var/mob/M,var/g,var/fat)
 		return "telekinesishead[fat]_s"
+
+/datum/dna/gene/basic/Muscles
+	name="Muscular"
+	activation_messages=list("You feel stonger.")
+	deactivation_messages=list("You feel weak again.")
+	mutation=mMuscles
+	activation_prob=0
+
+/datum/dna/gene/basic/weak
+	name="Weak"
+	activation_messages=list("You feel weaker.")
+	deactivation_messages=list("Your muscles feel normal again.")
+	mutation=mWeak
+	activation_prob=0
